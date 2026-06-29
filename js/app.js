@@ -46,6 +46,25 @@ document.addEventListener("DOMContentLoaded", () => {
         cursor.classList.remove("hovering");
       });
     });
+
+    // Custom cursor text and click event for Instagram on video hover
+    const videoWrap = document.getElementById("videoWrap");
+    if (videoWrap) {
+      videoWrap.addEventListener("mouseenter", () => {
+        cursor.classList.add("video-hovering");
+        cursor.innerHTML = `<span class="cursor-instagram-badge">Connect us on Instagram to view more</span>`;
+      });
+      videoWrap.addEventListener("mouseleave", () => {
+        cursor.classList.remove("video-hovering");
+        cursor.innerHTML = "";
+      });
+
+      // Navigate to Instagram on clicking the video container
+      videoWrap.addEventListener("click", (e) => {
+        if (e.target.closest("#videoToggle")) return;
+        window.open("https://instagram.com/managamma_ruchulu", "_blank");
+      });
+    }
   }
 
   /* ==========================================================================
@@ -689,6 +708,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       /* Gradually decrease video transparency (opacity 0.4 -> 1.0) on scroll */
       tl.to(videoEl, { opacity: 1.0, ease: "none", duration: 1 }, 0);
+
+      /* Gradually fade in the video wrap container from opacity 0 to 1 on scroll */
+      tl.fromTo(videoWrapEl, { opacity: 0 }, { opacity: 1, ease: "power2.out", duration: 0.55 }, 0);
 
       tl.to(videoWrapEl, {
         width: function () { return getStageOneTarget().width + "px"; },
