@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mangamma Ruchulu | Premium South Indian & Authentic Andhra Fine Dining</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Indulge in authentic Andhra and Telangana culinary traditions. Experience our signature Aritaku Bhojanam, rich Biryanis, and premium family dining at Mangamma Ruchulu.">
+  <meta name="keywords" content="Mangamma Ruchulu, South Indian Restaurant, Andhra Cuisine, Telangana Cuisine, Aritaku Bhojanam, Banana Leaf Meals, Fine Dining, Biryani">
+  <meta name="author" content="Mangamma Ruchulu">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mangammaruchulu.com/">
+  <meta property="og:title" content="Mangamma Ruchulu | Premium South Indian & Authentic Andhra Fine Dining">
+  <meta property="og:description" content="Indulge in authentic Andhra and Telangana culinary traditions. Experience our signature Aritaku Bhojanam, rich Biryanis, and premium family dining.">
+  <meta property="og:image" content="assets/hero_dish.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mangammaruchulu.com/">
+  <meta property="twitter:title" content="Mangamma Ruchulu | Premium South Indian & Authentic Andhra Fine Dining">
+  <meta property="twitter:description" content="Indulge in authentic Andhra and Telangana culinary traditions. Experience our signature Aritaku Bhojanam, rich Biryanis, and premium family dining.">
+  <meta property="twitter:image" content="assets/hero_dish.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"  type="image/png" href="assets/logo_round.png">
+
+  <!-- JSON-LD Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Mangamma Ruchulu",
+    "image": "assets/hero_dish.jpg",
+    "@id": "https://mangammaruchulu.com/#restaurant",
+    "url": "https://mangammaruchulu.com/",
+    "telephone": "+919876543210",
+    "priceRange": "$$",
+    "menu": "https://mangammaruchulu.com/menu",
+    "servesCuisine": [
+      "Andhra",
+      "Telangana",
+      "South Indian Traditional Meals"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot No, Level 5, 36th Square, Opp. SVM Mall, Near Pedamma Temple Arch, Jubilee Hills, 481, Road No. 36",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500033",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.4325,
+      "longitude": 78.4075
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "11:30",
+        "closes": "23:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="js-scroll-progress"></div>
+
+  <!-- Custom Custom Cursor (Awwwards design touch) -->
+  <div class="custom-cursor" id="js-custom-cursor"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="js-site-header">
+    <div class="header-container" >
+      <!-- Mobile Logo (visible only on mobile/tablet) -->
+      <a href="#" class="logo logo-mobile" aria-label="Mangamma Ruchulu Home">
+        <img src="assets/logo_round.png" alt="Mangamma Ruchulu Logo" class="logo-img">
+      </a>
+      
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#specialties" class="nav-link">Specialties</a></li>
+          <li class="logo-item">
+            <a href="#" class="logo" aria-label="Mangamma Ruchulu Home">
+              <img src="assets/logo_round.png" alt="Mangamma Ruchulu Logo" class="logo-img">
+            </a>
+          </li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- <a href="#contact" class="btn btn-primary btn-sm">Order Now</a> -->
+        <button class="menu-toggle" id="js-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-pattern"></div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu" id="js-mobile-menu">
+    <div class="mobile-menu-container">
+      <ul class="mobile-nav-links">
+        <li><a href="#" class="mobile-nav-link">Home</a></li>
+        <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="#specialties" class="mobile-nav-link">Specialties</a></li>
+        <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="tel:+919876543210" class="mobile-contact-link">+91 98765 43210</a>
+        <!-- <div class="mobile-cta-group">
+          <a href="#contact" class="btn btn-primary">Order Online</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 01: HERO EXPERIENCE -->
+    <!-- SECTION 01: HERO EXPERIENCE -->
+    <section class="section-hero" id="hero">
+      <!-- Background Image Slider -->
+      <div class="hero-slider" id="js-hero-slider">
+        <div class="hero-slide" style="background-image: url('assets/hero_dish.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/spec_aritaku.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/spec_biryani.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/menu_meals.jpg');"></div>
+      </div>
+      
+      <!-- Sleek Dark Overlay -->
+      <div class="hero-overlay"></div>
+
+      <div class="spice-bg" id="js-spice-bg" style="z-index: 3;">
+        <!-- Floating spice particles in inline SVG for high-fidelity loading -->
+        <svg class="spice-particle p1" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L13 7L20 10L13 13L10 20L7 13L0 10L7 7Z" fill="#C6A15A" opacity="0.3"/></svg>
+        <svg class="spice-particle p2" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 0L10.5 5.5L16 8L10.5 10.5L8 16L5.5 10.5L0 8L5.5 5.5Z" fill="#8C1023" opacity="0.15"/></svg>
+        <svg class="spice-particle p3" width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="6" fill="#C6A15A" opacity="0.25"/></svg>
+        <svg class="spice-particle p4" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 0L11 7L18 9L11 11L9 18L7 11L0 9L7 7Z" fill="#8C1023" opacity="0.2"/></svg>
+      </div>
+
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <div class="hero-tag">A UNIT OF LAKSHYA FOODS. EST 2015</div>
+          <h1 class="hero-title">
+            <span class="word-wrapper"><span class="word">Authentic</span></span> 
+            <span class="word-wrapper"><span class="word">Andhra</span></span> 
+            <span class="word-wrapper"><span class="word" style="color: var(--color-gold)">Flavours.</span></span>
+            <br>
+            <span class="word-wrapper"><span class="word">Crafted</span></span> 
+            <span class="word-wrapper"><span class="word">With</span></span> 
+            <span class="word-wrapper"><span class="word">Tradition.</span></span>
+          </h1>
+          <p class="hero-subheadline">
+            Serving timeless South Indian recipes, rich culinary heritage, and memorable dining experiences for over a decade.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Order Now</a>
+            <a href="#menu" class="btn-text">
+              <span>View Menu</span>
+              <svg class="btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll to Explore</span>
+      </div>
+
+
+    </section>
+
+    <!-- SECTION: PREMIUM BRAND STATEMENT (Comfort Food) -->
+    <section class="section-brand-statement" id="brand-statement" aria-label="Brand Statement">
+      <div class="container">
+        <div class="brand-statement-content">
+          <h2 class="brand-statement-heading" id="brand-heading">
+            COMFORT FOOD,<br>
+            ON THE GO
+          </h2>
+          <p class="brand-statement-desc" id="brand-desc">
+            A hot &amp; fresh homemade meal brings comfort and cures hunger anytime. Carefully picked, traditionally cooked and served with love, every dish reflects authenticity, warmth and unforgettable taste.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: OUR STORY -->
+    <section class="section-story" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-visual reveal-image">
+            <div class="story-image-wrapper parallax-container">
+              <img src="assets/story_heritage.jpg" alt="Fresh stone ground spices and traditional kitchen mortar representing the heritage of Mangamma Ruchulu" class="story-img parallax-img">
+            </div>
+            <div class="story-visual-overlay">
+              <h3>Est. 2015</h3>
+              <p>Hyderabad, TS</p>
+            </div>
+          </div>
+
+          <div class="story-content text-reveal-trigger">
+            <span class="section-sub">Our Heritage</span>
+            <h2 class="section-title">A Legacy of Rich Taste & Authenticity</h2>
+            <div class="story-description">
+              <p>For more than eleven years, Mangamma Ruchulu has stood as a beacon of culinary preservation. Founded with the mission to recreate the robust flavors of home-cooked Andhra and Telangana food, every recipe represents generations of kitchen secrets.</p>
+            </div>
+            
+            <div class="story-timeline">
+              <div class="timeline-item">
+                <div class="timeline-year">2015</div>
+                <div class="timeline-desc">
+                  <h4>Inception & Heritage Recipes</h4>
+                  <p>Opened our first doors with 25 heritage recipes, curated by traditional family cooks.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2020</div>
+                <div class="timeline-desc">
+                  <h4>Expanding the Kitchen</h4>
+                  <p>Broadened our menu to introduce rare, rustic local culinary gems from Telangana districts.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">Present</div>
+                <div class="timeline-desc">
+                  <h4>Traditional Feast Redefined</h4>
+                  <p>Consistently voted as the premier location for genuine, uncompromising South Indian meals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: SIGNATURE SPECIALTIES -->
+    <section class="section-specialties" id="specialties">
+      <div class="sticky-container">
+        <div class="specialties-left">
+          <div class="sticky-scroller-text">
+            <div class="text-block active" data-index="0">
+              <span class="specialty-label">01. Signature Experience</span>
+              <h2 class="specialty-title">Aritaku Bhojanam</h2>
+              <p class="specialty-description">The ultimate Andhra experience. A lavish assortment of traditional vegetable fries, dals, rasam, sambar, fresh chutneys, and hot rice drizzled with pure cow ghee, served traditionally on a fresh green banana leaf.</p>
+              <a href="#menu" class="btn btn-outline btn-sm">Explore Meal Details</a>
+            </div>
+            
+            <div class="text-block" data-index="1">
+              <span class="specialty-label">02. Royal Heritage</span>
+              <h2 class="specialty-title">Chicken Dum Biryani</h2>
+              <p class="specialty-description">Fragrant long-grained Basmati rice layered with tender chunks of chicken, infused with saffron, mint, and freshly ground handpicked spices, slow-cooked in sealed clay handis on charcoal fire.</p>
+              <a href="#menu" class="btn btn-outline btn-sm">Explore Biryani Details</a>
+            </div>
+
+            <div class="text-block" data-index="2">
+              <span class="specialty-label">03. Coastal Delicacy</span>
+              <h2 class="specialty-title">Apollo Fish</h2>
+              <p class="specialty-description">Crispy, deep-fried fresh fish fillets tossed in a fiery, aromatic tempering of fresh curry leaves, green chilies, yogurt, and home-crafted spices. The perfect starter to ignite your palate.</p>
+              <a href="#menu" class="btn btn-outline btn-sm">Explore Seafood Details</a>
+            </div>
+
+            <div class="text-block" data-index="3">
+              <span class="specialty-label">04. Local Street Art</span>
+              <h2 class="specialty-title">Chicken Majestic</h2>
+              <p class="specialty-description">A Hyderabad classic. Tender chicken strips marinated with buttermilk, lightly battered and stir-fried with green chilies, garlic, and special spices for an incredibly succulent bite.</p>
+              <a href="#menu" class="btn btn-outline btn-sm">Explore Starters Details</a>
+            </div>
+
+            <div class="text-block" data-index="4">
+              <span class="specialty-label">05. Rustic Health</span>
+              <h2 class="specialty-title">Ragi Sangati</h2>
+              <p class="specialty-description">Traditional nutritious finger millet dumplings from the heart of Rayalaseema, served warm and best paired with our spicy country chicken curry (Natu Kodi Pulusu) and melted ghee.</p>
+              <a href="#menu" class="btn btn-outline btn-sm">Explore Rustic Details</a>
+            </div>
+          </div>
+
+          <!-- Slider Controls & Progress (Awwwards premium touch) -->
+          <div class="slider-controls">
+            <div class="slider-pagination-wrap">
+              <span class="current-slide-num" id="js-specialty-current">01</span>
+              <div class="slider-progress-track">
+                <div class="slider-progress-bar" id="js-specialty-progress"></div>
+              </div>
+              <span class="total-slides-num">05</span>
+            </div>
+            
+            <div class="slider-arrows">
+              <button class="slider-arrow prev" id="js-specialty-prev" aria-label="Previous specialty">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+              </button>
+              <button class="slider-arrow next" id="js-specialty-next" aria-label="Next specialty">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="specialties-right">
+          <div class="image-viewer-frame">
+            <div class="specialty-image-wrapper active" data-index="0">
+              <img src="assets/spec_aritaku.jpg" alt="Aritaku Bhojanam - Traditional South Indian meal served on a green banana leaf with side bowls of curries, chutneys, and rice" class="specialty-img">
+            </div>
+            <div class="specialty-image-wrapper" data-index="1">
+              <img src="assets/spec_biryani.jpg" alt="Chicken Dum Biryani cooked in a traditional handi, garnished with fried onions, mint, and hard boiled eggs" class="specialty-img">
+            </div>
+            <div class="specialty-image-wrapper" data-index="2">
+              <img src="assets/spec_apollo.jpg" alt="Apollo Fish - Golden crispy fish fillets tossed with green chilies and fresh curry leaves" class="specialty-img">
+            </div>
+            <div class="specialty-image-wrapper" data-index="3">
+              <img src="assets/spec_majestic.jpg" alt="Chicken Majestic - Fried chicken strips stir fried with spices, garlic, and yogurt sauce" class="specialty-img">
+            </div>
+            <div class="specialty-image-wrapper" data-index="4">
+              <img src="assets/spec_ragi.jpg" alt="Ragi Sangati - Millet ball served with country chicken curry in traditional copper bowls" class="specialty-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: MENU EXPERIENCE -->
+    <section class="section-menu" id="menu">
+      <div class="container">
+        <div class="menu-header">
+          <span class="section-sub">Culinary Palette</span>
+          <h2 class="section-title">Discover Our Curated Menu</h2>
+          <p class="menu-intro">Each category features a handpicked selection of our finest preparations, carrying the warmth of South Indian spices and culinary precision.</p>
+        </div>
+
+        <!-- Category Navigation -->
+        <div class="menu-categories-nav-wrapper">
+          <nav class="menu-categories-nav" aria-label="Menu categories">
+            <button class="category-btn active" data-category="meals">Meals</button>
+            <button class="category-btn" data-category="starters">Starters</button>
+            <button class="category-btn" data-category="curries">Curries</button>
+            <button class="category-btn" data-category="biryanis">Biryanis</button>
+            <button class="category-btn" data-category="tandoor">Tandoor</button>
+            <button class="category-btn" data-category="seafood">Seafood</button>
+          </nav>
+        </div>
+
+        <!-- Menu Showcase Container -->
+        <div class="menu-showcase">
+          <!-- MEALS CATEGORY -->
+          <div class="menu-category-pane active" id="menu-meals">
+            <div class="menu-items-grid">
+              <!-- Item 1 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator veg" title="Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Mangamma Signature Aritaku Bhojanam</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹380</div>
+                </div>
+                <p class="item-desc">Banana leaf meal with Pappu, two seasonal dry curries, Sambhar, Rasam, Charu, Chutney, Podi, Curd, Ghee, and choice of sweet.</p>
+              </div>
+              <!-- Item 2 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Telangana Palletoori Bhojanam</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹420</div>
+                </div>
+                <p class="item-desc">Rustic meal featuring Jonne Rotte (jowar flatbread), Ragi Sangati, country chicken curry, and fresh tomato mint pachadi.</p>
+                <div class="item-tags">
+                  <span class="tag-spicy">🌶 Spicy</span>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator veg" title="Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Rayalaseema Thali</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹390</div>
+                </div>
+                <p class="item-desc">Fiery local curries, native millets, spicy powder, local dry beans fry, traditional thick buttermilk curry, and sweet Bobbatlu.</p>
+              </div>
+              <!-- Item 4 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator veg" title="Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Godavari Special Bhojanam</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹350</div>
+                </div>
+                <p class="item-desc">Coastal Andhra platter with Pappu, Pulusu, dry prawn chutney, Avakaya, seasonal curry, rice, and Payasam.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STARTERS CATEGORY -->
+          <div class="menu-category-pane" id="menu-starters">
+            <div class="menu-items-grid">
+              <!-- Item 1 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Chicken Majestic</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹320</div>
+                </div>
+                <p class="item-desc">Tender chicken strips marinated with buttermilk, lightly battered and fried, tossed with garlic and green chilies.</p>
+              </div>
+              <!-- Item 2 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Kaju Kodi Vepudu</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹360</div>
+                </div>
+                <p class="item-desc">Andhra dry chicken fry cooked with whole cashew nuts, curry leaves, and freshly ground black peppercorns.</p>
+                <div class="item-tags">
+                  <span class="tag-special">⭐ Chef Special</span>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator veg" title="Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Gobi Kempu Bezawada</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹260</div>
+                </div>
+                <p class="item-desc">Crispy cauliflower florets tossed in yogurt, green chili paste, curry leaves, and a touch of local aromatic garam masala.</p>
+              </div>
+              <!-- Item 4 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Chilli Chicken Dry</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹290</div>
+                </div>
+                <p class="item-desc">Crispy battered chicken tossed in a fiery Indo-Chinese sauce with bell peppers, onions, and green chilies.</p>
+                <div class="item-tags">
+                  <span class="tag-spicy">🌶 Spicy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CURRIES CATEGORY -->
+          <div class="menu-category-pane" id="menu-curries">
+            <div class="menu-items-grid">
+              <!-- Item 1 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Natu Kodi Pulusu</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹450</div>
+                </div>
+                <p class="item-desc">Authentic country chicken cooked in a spicy, thin onion-tomato gravy with local spices, best paired with Ragi Sangati.</p>
+                <div class="item-tags">
+                  <span class="tag-spicy">🌶 Spicy</span>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Gongura Mamsam</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹490</div>
+                </div>
+                <p class="item-desc">Tender mutton pieces cooked with tangy sorrel leaves (Gongura), garlic, green chilies, and a master spice mix.</p>
+              </div>
+              <!-- Item 3 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator veg" title="Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Gutthi Vankaya Kura</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹310</div>
+                </div>
+                <p class="item-desc">Classic Andhra dish featuring tender baby eggplants stuffed with a roasted peanut, sesame, and coconut spice paste.</p>
+              </div>
+              <!-- Item 4 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Mamsam Iguru</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹470</div>
+                </div>
+                <p class="item-desc">Dry roasted mutton curry with freshly ground spices, caramelized onions, and aromatic curry leaves — a Telangana staple.</p>
+                <div class="item-tags">
+                  <span class="tag-special">⭐ Chef Special</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BIRYANIS CATEGORY -->
+          <div class="menu-category-pane" id="menu-biryanis">
+            <div class="menu-items-grid">
+              <!-- Item 1 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Special Chicken Dum Biryani</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹390</div>
+                </div>
+                <p class="item-desc">Fragrant basmati rice layered with cooked spiced chicken, saffron, mint, coriander, and native spices.</p>
+              </div>
+              <!-- Item 2 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Ulavacharu Chicken Biryani</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹410</div>
+                </div>
+                <p class="item-desc">Dum biryani infused with thick, slow-cooked horse gram soup (Ulavacharu) for a deep, complex, and sour-savory flavor profile.</p>
+                <div class="item-tags">
+                  <span class="tag-special">⭐ House Special</span>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Avakaya Mutton Biryani</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹460</div>
+                </div>
+                <p class="item-desc">Rich mutton biryani layered with traditional spicy mango pickle (Avakaya) representing a classic Andhra custom.</p>
+              </div>
+              <!-- Item 4 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator veg" title="Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Paneer Dum Biryani</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹340</div>
+                </div>
+                <p class="item-desc">Aromatic dum-cooked basmati rice layered with marinated paneer cubes, saffron, fried onions, and fresh mint.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TANDOOR CATEGORY -->
+          <div class="menu-category-pane" id="menu-tandoor">
+            <div class="menu-items-grid">
+              <!-- Item 1 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Bhimavaram Spice Tandoori Chicken</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹340 / 590</div>
+                </div>
+                <p class="item-desc">Whole chicken marinated in traditional spicy yogurt rub with a heavy touch of red Guntur chilies and clay roasted.</p>
+              </div>
+              <!-- Item 2 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator veg" title="Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Malai Paneer Tikka</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹310</div>
+                </div>
+                <p class="item-desc">Soft cottage cheese cubes marinated in cashew cream, yogurt, light spices, cardamoms, and grilled in the tandoor.</p>
+              </div>
+              <!-- Item 3 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Guntur Masala Seekh Kabab</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹410</div>
+                </div>
+                <p class="item-desc">Minced mutton skewers seasoned with coriander seeds, chopped green chilies, mint, garlic, and special brand spice blends.</p>
+              </div>
+              <!-- Item 4 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Murgh Malai Tikka</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹350</div>
+                </div>
+                <p class="item-desc">Creamy chicken tikka marinated with cheese, cream, cashew paste, and delicate spices, charred in the tandoor.</p>
+                <div class="item-tags">
+                  <span class="tag-special">⭐ Chef Special</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEAFOOD CATEGORY -->
+          <div class="menu-category-pane" id="menu-seafood">
+            <div class="menu-items-grid">
+              <!-- Item 1 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Apollo Fish Vepudu</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹380</div>
+                </div>
+                <p class="item-desc">Spiced, crispy fish fillets tossed with green chilies, curry leaves, and a special house-crafted yogurt marinade.</p>
+              </div>
+              <!-- Item 2 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Nellore Chepala Pulusu</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹480</div>
+                </div>
+                <p class="item-desc">Fiery fish curry cooked in a tangy raw tamarind gravy with green mango slices, garlic, and freshly roasted fenugreek powder.</p>
+                <div class="item-tags">
+                  <span class="tag-special">⭐ Chef Special</span>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Konasema Royyala Iguru</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹420</div>
+                </div>
+                <p class="item-desc">Semi-dry prawn curry slow-cooked with fresh coconut pieces, green chilies, caramelized onions, curry leaves, and mustard seeds.</p>
+              </div>
+              <!-- Item 4 -->
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="veg-indicator non-veg" title="Non-Vegetarian"><span class="veg-dot"></span></span>
+                  <h4 class="item-name">Ravva Chepala Vepudu</h4>
+                  <span class="item-dots"></span>
+                  <div class="item-price">₹360</div>
+                </div>
+                <p class="item-desc">Semolina-crusted fish fry seasoned with turmeric, red chili, and cumin — a coastal Andhra street food classic.</p>
+                <div class="item-tags">
+                  <span class="tag-spicy">🌶 Spicy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-footer">
+          <button type="button" class="btn btn-outline btn-lg" id="js-open-menu-pdf">View Full Digital Menu</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PREMIUM SCROLL-DRIVEN HERO VIDEO REVEAL -->
+    <section class="hero-video-reveal" id="heroVideoReveal" aria-label="Restaurant Storytelling Video">
+      <h2 class="sr-only">Mangamma Ruchulu — Authentic Culinary Experience</h2>
+ 
+      <div class="video-center">
+        <div class="video-float" id="videoFloat">
+          <div class="video-wrap" id="videoWrap">
+            <video
+              id="heroVideo"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+              poster="assets/hero_dish.jpg"
+              aria-hidden="true"
+              tabindex="-1"
+            >
+              <source src="files/testimonial-video.mov" type="video/mp4" />
+              <source src="files/testimonial-video.mov" type="video/quicktime" />
+            </video>
+          </div>
+        </div>
+      </div>
+ 
+      <button class="video-toggle" id="videoToggle" type="button" aria-pressed="false">
+        <span class="sr-only" id="videoToggleLabel">Pause background video</span>
+        <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="5" height="18"/><rect x="14" y="3" width="5" height="18"/></svg>
+        <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l16 9-16 9V3z"/></svg>
+      </button>
+ 
+      <div class="scroll-cue" id="scrollCue" aria-hidden="true">
+        <span class="line"></span>
+        Scroll
+      </div>
+    </section>
+
+    <!-- SECTION 05: WHY PEOPLE LOVE US -->
+    <section class="section-why-us" id="why-us">
+      <div class="container">
+        <div class="why-us-grid">
+          <div class="why-us-intro">
+            <span class="section-sub">Standard of Quality</span>
+            <h2 class="section-title">A Symphony of Heritage & Hospitality</h2>
+            <p>Our goal is to build long-standing relationships with diners by never taking shortcuts. From the sourcing of our oil and spices to the design of our interiors, we celebrate the true luxury of tradition.</p>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-number-wrapper">
+                <span class="metric-number" data-target="11">0</span><span class="metric-suffix">+</span>
+              </div>
+              <h3 class="metric-label">Years of Culinary Heritage</h3>
+              <p class="metric-sub">Serving consistent, unchanged generational recipes since 2015.</p>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-number-wrapper">
+                <span class="metric-number" data-target="100">0</span><span class="metric-suffix">%</span>
+              </div>
+              <h3 class="metric-label">Natural Spices</h3>
+              <p class="metric-sub">Sourced directly from local farmers and crushed in our kitchen.</p>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-number-wrapper">
+                <span class="metric-number" data-target="50">0</span><span class="metric-suffix">+</span>
+              </div>
+              <h3 class="metric-label">Traditional Recipes</h3>
+              <p class="metric-sub">Curated dishes covering coastal Andhra and interior Telangana.</p>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-number-wrapper">
+                <span class="metric-number" data-target="4.8" data-decimal="true">0.0</span><span class="metric-suffix">/5</span>
+              </div>
+              <h3 class="metric-label">Guest Satisfaction</h3>
+              <p class="metric-sub">Over 50,000 positive reviews across premium dining platforms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: GALLERY EXPERIENCE -->
+    <section class="section-gallery" id="gallery">
+      <div class="gallery-header-sticky">
+        <div class="container">
+          <div class="gallery-header-layout">
+            <div>
+              <span class="section-sub">Visual Narratives</span>
+              <h2 class="section-title">Captured Moments</h2>
+            </div>
+            <p class="gallery-intro">Step inside our kitchen, our dining space, and see how we craft memories with ingredients and warmth.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Horizontal Scrollable Container -->
+      <div class="gallery-track-wrapper">
+        <div class="gallery-track" id="js-gallery-track">
+          
+          <div class="gallery-item size-sm">
+            <div class="gallery-img-container">
+              <img src="assets/gallery_dining.jpg" alt="Premium wooden dining tables beautifully set with brass glasses and ceramic plates in clean minimal interior" class="gallery-img">
+            </div>
+            <div class="gallery-item-info">
+              <h4>The Dining Space</h4>
+              <p>Warm lights, clean setup</p>
+            </div>
+          </div>
+
+          <div class="gallery-item size-sm">
+            <div class="gallery-img-container">
+              <img src="assets/gallery_spice_grinding.jpg" alt="A cook grinding spices on a traditional stone mortar block" class="gallery-img">
+            </div>
+            <div class="gallery-item-info">
+              <h4>Fresh Stone-Ground Spices</h4>
+              <p>Crushed by hand daily</p>
+            </div>
+          </div>
+
+          <div class="gallery-item size-sm">
+            <div class="gallery-img-container">
+              <img src="assets/gallery_plating.jpg" alt="Chef carefully garnishing a hot plate of biryani with coriander and lemon" class="gallery-img">
+            </div>
+            <div class="gallery-item-info">
+              <h4>Artful Plating</h4>
+              <p>Precision and respect</p>
+            </div>
+          </div>
+
+          <div class="gallery-item size-sm">
+            <div class="gallery-img-container">
+              <img src="assets/gallery_coffee.jpg" alt="Traditional chicory filter coffee foaming inside a brass tumbler tumbler cup" class="gallery-img">
+            </div>
+            <div class="gallery-item-info">
+              <h4>Traditional Filter Coffee</h4>
+              <p>Frothy, rich, and strong</p>
+            </div>
+          </div>
+
+          <div class="gallery-item size-sm">
+            <div class="gallery-img-container">
+              <img src="assets/gallery_kitchen.jpg" alt="A steaming clay pot of biryani being sealed with wheat dough over mild embers" class="gallery-img">
+            </div>
+            <div class="gallery-item-info">
+              <h4>The Dum Kitchen</h4>
+              <p>Simmered on slow wood-fire</p>
+            </div>
+          </div>
+
+          <div class="gallery-item size-sm">
+            <div class="gallery-img-container">
+              <img src="assets/gallery_family.jpg" alt="A family smiling while sharing food around a long dining table" class="gallery-img">
+            </div>
+            <div class="gallery-item-info">
+              <h4>Shared Moments</h4>
+              <p>Creating lifelong memories</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SIGNATURE THALI SHOWCASE -->
+    <section class="section-thali-showcase" id="thali-showcase" aria-label="Thali Showcase">
+      <div class="container">
+        <div class="thali-grid">
+          <div class="thali-visual" id="thali-visual">
+            <div class="thali-image-wrapper">
+              <img src="assets/menu_meals.jpg" alt="Traditional South Indian Thali - A complete banana leaf meal with multiple curries, rice, sambhar, rasam, chutneys and papad served fresh" class="thali-img" loading="lazy">
+            </div>
+          </div>
+          <div class="thali-content" id="thali-content">
+            <h2 class="thali-heading">
+              South Indian Thalis<br>
+              Always Fresh,<br>
+              Always Hot!
+            </h2>
+            <p class="thali-desc">
+              Crafted with traditional recipes and served with care, every thali celebrates the rich flavours and warmth of home-style cooking.
+            </p>
+            <div class="thali-badge" id="thali-badge" aria-label="Rating badge: 4.5 out of 5 stars, Best Rated Restaurant">
+              <div class="thali-badge-inner">
+                <span class="badge-curved-text badge-curved-top" aria-hidden="true">
+                  <svg viewBox="0 0 140 140" width="140" height="140">
+                    <defs>
+                      <path id="badge-curve-top" d="M 70,70 m -55,0 a 55,55 0 1,1 110,0" />
+                    </defs>
+                    <text>
+                      <textPath href="#badge-curve-top" startOffset="50%" text-anchor="middle">BEST RATED RESTAURANT</textPath>
+                    </text>
+                  </svg>
+                </span>
+                <span class="badge-curved-text badge-curved-bottom" aria-hidden="true">
+                  <svg viewBox="0 0 140 140" width="140" height="140">
+                    <defs>
+                      <path id="badge-curve-bottom" d="M 70,70 m 55,0 a 55,55 0 1,1 -110,0" />
+                    </defs>
+                    <text>
+                      <textPath href="#badge-curve-bottom" startOffset="50%" text-anchor="middle">BEST RATED RESTAURANT</textPath>
+                    </text>
+                  </svg>
+                </span>
+                <div class="badge-center">
+                  <span class="badge-score">4.5+</span>
+                  <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: FINAL CTA + CONTACT -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-cta-block">
+            <span class="contact-sub">Join Us for a Feast</span>
+            <h2 class="contact-title">Ready For Your Next Feast?</h2>
+            <p class="contact-desc">Experience premium South Indian hospitality. Book your table in advance or order our curated meals online to enjoy at home.</p>
+            
+            <div class="contact-cta-buttons">
+              <a href="tel:+919876543210" class="btn btn-gold btn-lg">Call Now</a>
+              <a href="#menu" class="btn btn-white btn-lg">Order Online</a>
+            </div>
+
+            <div class="contact-info-grid">
+              <div class="info-item">
+                <h5>Hours of Service</h5>
+                <p>Monday - Sunday<br>Lunch: 11:30 AM - 3:30 PM<br>Dinner: 7:00 PM - 11:00 PM</p>
+              </div>
+              <div class="info-item">
+                <h5>Inquiries</h5>
+                <p>Phone: +91 98765 43210<br>Email: dine@mangammaruchulu.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-interactive-block">
+            <div class="reservation-card">
+              <h3>Reserve a Table</h3>
+              <form id="js-reservation-form" class="reservation-form">
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="res-name">Name</label>
+                    <input type="text" id="res-name" required placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="res-phone">Phone</label>
+                    <input type="tel" id="res-phone" required placeholder="Phone Number">
+                  </div>
+                </div>
+
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="res-guests">Guests</label>
+                    <select id="res-guests" required>
+                      <option value="2">2 Guests</option>
+                      <option value="4">4 Guests</option>
+                      <option value="6">6 Guests</option>
+                      <option value="8">8+ Guests</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="res-date">Date</label>
+                    <input type="text" id="res-date" required placeholder="dd-mm-yyyy" readonly>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-time">Time Slot</label>
+                  <select id="res-time" required>
+                    <option value="lunch-1">12:00 PM</option>
+                    <option value="lunch-2">1:30 PM</option>
+                    <option value="dinner-1">7:30 PM</option>
+                    <option value="dinner-2">9:00 PM</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking Request</button>
+                <div class="form-feedback" id="js-form-feedback"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+       <div class="dance-pattern"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Left: Brand Logo, Address, Contacts & Socials -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <a href="#" aria-label="Mangamma Ruchulu Home">
+              <img src="assets/Mangamma Ruchulu_white.png" alt="Mangamma Ruchulu Logo" class="footer-logo-img" style="height: 100px; width: auto; object-fit: contain;">
+            </a>
+          </div>
+          <p class="footer-address">
+            Plot No, Level 5, 36th Square, Opp. SVM Mall, Near Pedamma Temple Arch, Jubilee Hills, 481, Road No. 36, Hyderabad, Telangana 500033
+          </p>
+          <p class="footer-contact">
+            <span>Phone: <a href="tel:+919876543210">+91 98765 43210</a></span>
+            <span class="separator">|</span>
+            <span>Email: <a href="mailto:dine@mangammaruchulu.com">dine@mangammaruchulu.com</a></span>
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Multi-column links -->
+        <div class="footer-menus">
+          <!-- Col 1: Exploration Navigation -->
+          <div class="footer-menu-col">
+            <h4 class="footer-menu-title">Explore</h4>
+            <ul class="footer-menu-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#story">Our Story</a></li>
+              <li><a href="#specialties">Specialties</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2: Legal & Corporate Links -->
+          <div class="footer-menu-col">
+            <h4 class="footer-menu-title">Legal</h4>
+            <ul class="footer-menu-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Mangamma Ruchulu. All rights reserved.</p>
+        <p>A Unit of Lakshya Foods</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Declarations (GSAP, GSAP ScrollTrigger, Lenis, and Main App Logic) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Back to Top Button with Circular Progress -->
+  <button class="back-to-top" id="js-back-to-top" aria-label="Back to top">
+    <svg class="progress-ring" width="50" height="50">
+      <circle class="progress-ring__circle" stroke="var(--color-gold)" stroke-width="2" fill="transparent" r="23" cx="25" cy="25"/>
+    </svg>
+    <div class="back-to-top-inner">
+      <svg class="back-to-top-icon" width="16" height="16" viewBox="0 0 20 20" fill="none">
+        <path d="M10 16V4M10 4L4 10M10 4L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </button>
+  <!-- PDF Menu Modal Overlay -->
+  <div class="pdf-modal-overlay" id="js-pdf-modal">
+    <div class="pdf-modal-container">
+      <div class="pdf-modal-header">
+        <h3 class="pdf-modal-title">Our Full Menu</h3>
+        <button type="button" class="pdf-modal-close" id="js-close-menu-pdf" aria-label="Close menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="pdf-modal-body">
+        <iframe class="pdf-modal-iframe" id="js-pdf-iframe" scrolling="yes" title="Mangamma Ruchulu Full Menu"></iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
