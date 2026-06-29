@@ -1067,53 +1067,46 @@ document.addEventListener("DOMContentLoaded", () => {
      GSAP TEXT REVEAL & FLOAT HOVER FOR SECTION MANAGAMMA_RUCHULU
      ========================================================================== */
   if (hasGSAP && hasScrollTrigger) {
-    // Reveal letters of the brand title
     const brandChars = document.querySelectorAll("#js-reveal-brand .char-span");
     if (brandChars.length > 0) {
-      gsap.from(brandChars, {
+      // Create a unified timeline for coordinated brand section reveal (working up and down)
+      const brandTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#managamma_ruchulu",
+          start: "top 75%",
+          toggleActions: "play reverse play reverse"
+        }
+      });
+
+      // 1. Animate text slide-up, rotation, and opacity
+      brandTl.from(brandChars, {
         y: 120,
         opacity: 0,
         color: "var(--color-gold)",
         rotation: 10,
         duration: 1.2,
         ease: "power4.out",
-        stagger: 0.04,
-        scrollTrigger: {
-          trigger: "#managamma_ruchulu",
-          start: "top 75%",
-          toggleActions: "play none none none"
-        }
+        stagger: 0.04
       });
       
-      // Transition color to maroon during reveal
-      gsap.to(brandChars, {
+      // 2. Animate color change to Guntur maroon (overlapping with text reveal)
+      brandTl.to(brandChars, {
         color: "var(--color-maroon)",
-        delay: 0.3,
         duration: 1.0,
         ease: "power2.out",
-        stagger: 0.04,
-        scrollTrigger: {
-          trigger: "#managamma_ruchulu",
-          start: "top 75%",
-          toggleActions: "play none none none"
-        }
-      });
-    }
+        stagger: 0.04
+      }, "-=0.9");
 
-    // Scale and rotate in the 4 floating icons
-    gsap.from("#managamma_ruchulu .floating-icon", {
-      scale: 0,
-      opacity: 0,
-      rotation: -60,
-      duration: 1.5,
-      ease: "back.out(1.7)",
-      stagger: 0.15,
-      scrollTrigger: {
-        trigger: "#managamma_ruchulu",
-        start: "top 75%",
-        toggleActions: "play none none none"
-      }
-    });
+      // 3. Scale and rotate in the 3 floating icons (Vector, Vector 1, Vector 2)
+      brandTl.from("#managamma_ruchulu .floating-icon", {
+        scale: 0,
+        opacity: 0,
+        rotation: -60,
+        duration: 1.5,
+        ease: "back.out(1.7)",
+        stagger: 0.15
+      }, "-=1.6");
+    }
 
     // Parallax mouse move effect on floating icons in the section
     const revealSection = document.getElementById("managamma_ruchulu");
@@ -1126,7 +1119,6 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.to("#float-icon-1", { x: x * 0.06, y: y * 0.06, rotation: x * 0.03, duration: 0.6, ease: "power2.out" });
         gsap.to("#float-icon-2", { x: x * -0.05, y: y * -0.05, rotation: y * -0.04, duration: 0.6, ease: "power2.out" });
         gsap.to("#float-icon-3", { x: x * 0.04, y: y * -0.04, rotation: x * -0.03, duration: 0.6, ease: "power2.out" });
-        gsap.to("#float-icon-4", { x: x * -0.06, y: y * 0.05, rotation: y * 0.04, duration: 0.6, ease: "power2.out" });
       });
       
       // Reset position when mouse leaves
