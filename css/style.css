@@ -3018,3 +3018,130 @@ span.flatpickr-weekday {
     font-size: 17px;
   }
 }
+
+/* ==========================================================================
+   SECTION: CATERING & FRANCHISE (EXACT REFERENCE REGENERATION)
+   ========================================================================== */
+.section-catering-franchise {
+  padding: var(--space-2xl) 0;
+  background-color: var(--bg-secondary);
+  position: relative;
+}
+
+.cf-stacked-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cf-banner-card {
+  background-color: var(--bg-primary);
+  border: 1.5px solid var(--color-maroon);
+  border-radius: 32px;
+  padding: var(--space-xl) var(--space-4xl);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Strictly two equal parts */
+  align-items: center;
+  gap: var(--space-3xl);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.cf-banner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(140, 16, 35, 0.06);
+}
+
+.cf-banner-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cf-banner-content {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cf-banner-title {
+  font-family: var(--font-primary);
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  font-weight: 700;
+  color: var(--color-maroon);
+  line-height: 1.1;
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.cf-banner-subtitle {
+  font-family: var(--font-secondary);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-weight: 500;
+  color: var(--color-dark);
+  opacity: 0.85;
+  margin-bottom: var(--space-xl);
+  line-height: 1.4;
+}
+
+.cf-btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 28px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--color-maroon);
+  color: var(--color-maroon);
+  font-weight: 600;
+  font-size: 15px;
+  transition: var(--transition-fast);
+  background: transparent;
+}
+
+.cf-btn-pill:hover {
+  background-color: var(--color-maroon);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(140, 16, 35, 0.2);
+}
+
+.cf-banner-visual {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animation video plays directly on the card background without any container */
+.cf-banner-video {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Mobile & Tablet responsiveness */
+@media (max-width: 900px) {
+  .cf-banner-card {
+    grid-template-columns: 1fr;
+    padding: var(--space-2xl) var(--space-xl);
+    gap: var(--space-2xl);
+    text-align: center;
+  }
+
+  .cf-banner-content {
+    align-items: center;
+  }
+
+  .card-catering {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+
