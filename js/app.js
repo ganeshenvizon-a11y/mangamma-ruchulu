@@ -1095,4 +1095,42 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  /* ==========================================================================
+     14. FAQ ACCORDION CONTROLLER
+     ========================================================================== */
+  const faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach((item) => {
+    const trigger = item.querySelector(".faq-trigger");
+    const content = item.querySelector(".faq-content");
+
+    if (trigger && content) {
+      trigger.addEventListener("click", () => {
+        const isActive = item.classList.contains("active");
+
+        // Close other items for a clean accordion experience
+        faqItems.forEach((otherItem) => {
+          if (otherItem !== item && otherItem.classList.contains("active")) {
+            otherItem.classList.remove("active");
+            const otherTrigger = otherItem.querySelector(".faq-trigger");
+            const otherContent = otherItem.querySelector(".faq-content");
+            if (otherTrigger) otherTrigger.setAttribute("aria-expanded", "false");
+            if (otherContent) otherContent.style.maxHeight = null;
+          }
+        });
+
+        // Toggle current item
+        if (isActive) {
+          item.classList.remove("active");
+          trigger.setAttribute("aria-expanded", "false");
+          content.style.maxHeight = null;
+        } else {
+          item.classList.add("active");
+          trigger.setAttribute("aria-expanded", "true");
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  });
 });
+
