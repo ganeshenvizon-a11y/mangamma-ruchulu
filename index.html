@@ -1,15 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mangamma Ruchulu | Premium South Indian & Authentic Andhra Fine Dining</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mangamma Ruchulu | Premium South Indian & Authentic Andhra Fine Dining</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Indulge in authentic Andhra and Telangana culinary traditions. Experience our signature Aritaku Bhojanam, rich Biryanis, and premium family dining at Mangamma Ruchulu.">
+  <meta name="keywords" content="Mangamma Ruchulu, South Indian Restaurant, Andhra Cuisine, Telangana Cuisine, Aritaku Bhojanam, Banana Leaf Meals, Fine Dining, Biryani">
+  <meta name="author" content="Mangamma Ruchulu">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mangammaruchulu.com/">
+  <meta property="og:title" content="Mangamma Ruchulu | Premium South Indian & Authentic Andhra Fine Dining">
+  <meta property="og:description" content="Indulge in authentic Andhra and Telangana culinary traditions. Experience our signature Aritaku Bhojanam, rich Biryanis, and premium family dining.">
+  <meta property="og:image" content="assets/hero_dish.jpg">
 
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="Indulge in authentic Andhra and Telangana culinary traditions. Experience our signature Aritaku Bhojanam, rich Biryanis, and premium family dining at Mangamma Ruchulu.">
-        <meta name="keywords" content="Mangamma Ruchulu, South Indian Restaurant, Andhra Cuisine, Telangana Cuisine, Aritaku Bhojanam, Banana Leaf Meals, Fine Dining, Biryani">
-        <meta
-        name="author" content="Mangamma Ruchulu">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mangammaruchulu.com/">
+  <meta property="twitter:title" content="Mangamma Ruchulu | Premium South Indian & Authentic Andhra Fine Dining">
+  <meta property="twitter:description" content="Indulge in authentic Andhra and Telangana culinary traditions. Experience our signature Aritaku Bhojanam, rich Biryanis, and premium family dining.">
+  <meta property="twitter:image" content="assets/hero_dish.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"  type="image/png" href="assets/logo_round.png">
+
+  <!-- JSON-LD Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Mangamma Ruchulu",
+    "image": "assets/hero_dish.jpg",
+    "@id": "https://mangammaruchulu.com/#restaurant",
+    "url": "https://mangammaruchulu.com/",
+    "telephone": "+919876543210",
+    "priceRange": "$$",
+    "menu": "https://mangammaruchulu.com/menu",
+    "servesCuisine": [
+      "Andhra",
+      "Telangana",
+      "South Indian Traditional Meals"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot No, Level 5, 36th Square, Opp. SVM Mall, Near Pedamma Temple Arch, Jubilee Hills, 481, Road No. 36",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500033",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 17.4325,
+      "longitude": 78.4075
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "11:30",
+        "closes": "23:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="js-scroll-progress"></div>
+
+  <!-- Custom Custom Cursor (Awwwards design touch) -->
+  <div class="custom-cursor" id="js-custom-cursor"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="js-site-header">
+    <div class="header-container" >
+      <!-- Mobile Logo (visible only on mobile/tablet) -->
+      <a href="#" class="logo logo-mobile" aria-label="Mangamma Ruchulu Home">
+        <img src="assets/logo_round.png" alt="Mangamma Ruchulu Logo" class="logo-img">
+      </a>
+      
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#specialties" class="nav-link">Specialties</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="logo-item">
+            <a href="#" class="logo" aria-label="Mangamma Ruchulu Home">
+              <img src="assets/logo_round.png" alt="Mangamma Ruchulu Logo" class="logo-img">
+            </a>
+          </li>  
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#catering-franchise" class="nav-link">Catering & Franchise</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- <a href="#contact" class="btn btn-primary btn-sm">Order Now</a> -->
+        <button class="menu-toggle" id="js-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-pattern"></div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu" id="js-mobile-menu">
+    <div class="mobile-menu-container">
+      <ul class="mobile-nav-links">
+        <li><a href="#" class="mobile-nav-link">Home</a></li>
+        <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="#specialties" class="mobile-nav-link">Specialties</a></li>
+        <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#catering-franchise" class="mobile-nav-link">Catering & Franchise</a></li>
+        <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="tel:+919876543210" class="mobile-contact-link">+91 98765 43210</a>
+        <!-- <div class="mobile-cta-group">
+          <a href="#contact" class="btn btn-primary">Order Online</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 01: HERO EXPERIENCE -->
+    <!-- SECTION 01: HERO EXPERIENCE -->
+    <section class="section-hero" id="hero">
+      <!-- Background Image Slider -->
+      <div class="hero-slider" id="js-hero-slider">
+        <div class="hero-slide" style="background-image: url('assets/hero_dish.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/spec_aritaku.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/spec_biryani.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/menu_meals.jpg');"></div>
+      </div>
+      
+      <!-- Sleek Dark Overlay -->
+      <div class="hero-overlay"></div>
+
+      <div class="spice-bg" id="js-spice-bg" style="z-index: 3;">
+        <!-- Floating spice particles in inline SVG for high-fidelity loading -->
+        <svg class="spice-particle p1" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L13 7L20 10L13 13L10 20L7 13L0 10L7 7Z" fill="#C6A15A" opacity="0.3"/></svg>
+        <svg class="spice-particle p2" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 0L10.5 5.5L16 8L10.5 10.5L8 16L5.5 10.5L0 8L5.5 5.5Z" fill="#8C1023" opacity="0.15"/></svg>
+        <svg class="spice-particle p3" width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="6" fill="#C6A15A" opacity="0.25"/></svg>
+        <svg class="spice-particle p4" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 0L11 7L18 9L11 11L9 18L7 11L0 9L7 7Z" fill="#8C1023" opacity="0.2"/></svg>
+      </div>
+
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <div class="hero-tag">A UNIT OF LAKSHYA FOODS. EST 2015</div>
+          <h1 class="hero-title">
+            <span class="word-wrapper"><span class="word">Authentic</span></span> 
+            <span class="word-wrapper"><span class="word">Andhra</span></span> 
+            <span class="word-wrapper"><span class="word" style="color: var(--color-gold)">Flavours.</span></span>
+            <br>
+            <span class="word-wrapper"><span class="word">Crafted</span></span> 
+            <span class="word-wrapper"><span class="word">With</span></span> 
+            <span class="word-wrapper"><span class="word">Tradition.</span></span>
+          </h1>
+          <p class="hero-subheadline">
+            Serving timeless South Indian recipes, rich culinary heritage, and memorable dining experiences for over a decade.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Order Now</a>
+            <a href="#menu" class="btn-text">
+              <span>View Menu</span>
+              <svg class="btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll to Explore</span>
+      </div>
+
+
+    </section>
+
+    <!-- SECTION: PREMIUM BRAND STATEMENT (Comfort Food) -->
+    <section class="section-brand-statement" id="brand-statement" aria-label="Brand Statement">
+      <div class="container">
+        <div class="brand-statement-content">
+          <h2 class="brand-statement-heading" id="brand-heading">
+            COMFORT FOOD,<br>
+            ON THE GO
+          </h2>
+          <p class="brand-statement-desc" id="brand-desc">
+            A hot &amp; fresh homemade meal brings comfort and cures hunger anytime. Carefully picked, traditionally cooked and served with love, every dish reflects authenticity, warmth and unforgettable taste.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SIGNATURE THALI SHOWCASE -->
+    <section class="section-thali-showcase" id="thali-showcase" aria-label="Thali Showcase">
+      <div class="container">
+        <div class="thali-grid">
+          <div class="thali-visual" id="thali-visual">
+            <div class="thali-image-wrapper">
+              <img src="assets/menu_meals.jpg" alt="Traditional South Indian Thali - A complete banana leaf meal with multiple curries, rice, sambhar, rasam, chutneys and papad served fresh" class="thali-img" loading="lazy">
+            </div>
+          </div>
+          <div class="thali-content" id="thali-content">
+            <h2 class="thali-heading">
+              South Indian Thalis<br>
+              Always Fresh,<br>
+              Always Hot!
+            </h2>
+            <p class="thali-desc">
+              Crafted with traditional recipes and served with care, every thali celebrates the rich flavours and warmth of home-style cooking.
+            </p>
+            <div class="thali-badge" id="thali-badge" aria-label="Rating badge: 4.5 out of 5 stars, Best Rated Restaurant">
+              <div class="thali-badge-inner">
+                <span class="badge-curved-text badge-curved-top" aria-hidden="true">
+                  <svg viewBox="0 0 140 140" width="140" height="140">
+                    <defs>
+                      <path id="badge-curve-top" d="M 70,70 m -55,0 a 55,55 0 1,1 110,0" />
+                    </defs>
+                    <text>
+                      <textPath href="#badge-curve-top" startOffset="50%" text-anchor="middle">BEST RATED RESTAURANT</textPath>
+                    </text>
+                  </svg>
+                </span>
+                <span class="badge-curved-text badge-curved-bottom" aria-hidden="true">
+                  <svg viewBox="0 0 140 140" width="140" height="140">
+                    <defs>
+                      <path id="badge-curve-bottom" d="M 70,70 m 55,0 a 55,55 0 1,1 -110,0" />
+                    </defs>
+                    <text>
+                      <textPath href="#badge-curve-bottom" startOffset="50%" text-anchor="middle">BEST RATED RESTAURANT</textPath>
+                    </text>
+                  </svg>
+                </span>
+                <div class="badge-center">
+                  <span class="badge-score">4.5+</span>
+                  <span class="badge-stars" aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: OUR STORY -->
+    <section class="section-story" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-visual reveal-image">
+            <div class="story-image-wrapper parallax-container">
+              <img src="assets/story_heritage.jpg" alt="Fresh stone ground spices and traditional kitchen mortar representing the heritage of Mangamma Ruchulu" class="story-img parallax-img">
+            </div>
+            <div class="story-visual-overlay">
+              <h3>Est. 2015</h3>
+              <p>Hyderabad, TS</p>
+            </div>
+          </div>
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
@@ -1266,33 +1545,283 @@
                         </div>
                     </div>
 
-                    <!-- Right: Multi-column links -->
-                    <div
-                        class="footer-menus">
-                        <!-- Col 1: Exploration Navigation -->
-                        <div class="footer-menu-col">
-                            <h4 class="footer-menu-title">Explore</h4>
-                            <ul class="footer-menu-links">
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#story">Our Story</a>
-                                </li>
-                                <li>
-                                    <a href="#specialties">Specialties</a>
-                                </li>
-                                <li>
-                                    <a href="#menu">Menu</a>
-                                </li>
-                                <li>
-                                    <a href="#gallery">Gallery</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CATERING & FRANCHISE OPPORTUNITIES -->
+    <section class="section-catering-franchise" id="catering-franchise" aria-label="Catering and Franchise Options">
+      <div class="container">
+        <div class="cf-stacked-wrapper">
+          
+          <!-- CARD 1: FRANCHISE -->
+          <div class="cf-banner-card card-franchise">
+            <div class="cf-banner-part cf-banner-content">
+              <h2 class="cf-banner-title">Franchise</h2>
+              <p class="cf-banner-subtitle">Having trouble stopping after one bite?</p>
+              <a href="#contact" class="cf-btn-pill">Find out more</a>
+            </div>
+            <div class="cf-banner-part cf-banner-visual">
+              <video
+                class="cf-banner-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+              >
+                <source src="files/franchise.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <!-- CARD 2: CATERING -->
+          <div class="cf-banner-card card-catering">
+            <div class="cf-banner-part cf-banner-visual">
+              <video
+                class="cf-banner-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+              >
+                <source src="files/catering.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="cf-banner-part cf-banner-content">
+              <h2 class="cf-banner-title">Catering</h2>
+              <p class="cf-banner-subtitle">Add a South Indian touch to any event</p>
+              <a href="#contact" class="cf-btn-pill">Find out more</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- SECTION: FREQUENTLY ASKED QUESTIONS -->
+    <section class="section-faq" id="faq" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="faq-header text-center">
+          <span class="section-sub">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="faq-intro">Everything you need to know about our traditional dining experience, authentic recipes, and reservations.</p>
+        </div>
+
+        <div class="faq-accordion-wrapper">
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">What is special about Mangamma Ruchulu's Aritaku Bhojanam?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>Our signature Aritaku Bhojanam is served on fresh green banana leaves, honoring age-old South Indian traditions. It features an expansive assortment of authentic Andhra and Telangana specialties including flavored rice, seasonal dry curries, house-made podis, pure cow ghee, slow-cooked dal, sambhar, and traditional sweets.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Do you offer vegetarian and non-vegetarian preparation separately?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>Absolutely. We maintain strict kitchen protocols with designated preparation stations, separate cookware, and dedicated culinary teams for vegetarian and non-vegetarian dishes to ensure absolute dietary purity and authentic taste.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Is table reservation mandatory before visiting?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>While walk-in guests are always welcome, reserving in advance is strongly recommended, particularly during weekend lunch hours and peak evening sessions. You can reserve directly through our online reservation form below or by calling us.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Can spice levels be adjusted for children or mild preferences?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>Authentic Andhra cuisine is celebrated for its bold, spicy character. However, our master chefs are happy to tailor the heat and spice intensity for starters, curries, and tandoori items upon request when placing your order.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">Do you cater for bulk corporate events and family celebrations?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>Yes! We provide premium catering packages for corporate luncheons, family celebrations, and traditional festivals. We offer customized menus featuring live banana-leaf service, hot biryani handis, and traditional beverage counters.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span class="faq-question">What are your operating hours and exact location?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                <p>We are located at Level 5, 36th Square, opposite SVM Mall, Jubilee Hills, Road No. 36, Hyderabad. We welcome guests daily for Lunch from 11:30 AM to 3:30 PM and for Dinner from 7:00 PM to 11:00 PM.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- video testimonials   starts-->
+
+       <!-- <section class="video-testimonials">
+    <div class="container">
+
+        <div class="testimonial-heading">
+            <h2>What People are Saying</h2>
+            <p>
+                Read the candid confessions of many
+                a happy customer
+            </p>
+        </div>
+
+        <div class="testimonial-videos">
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/testimonial-1.webm" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/testimonial-1.webm" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/testimonial-1.webm" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/testimonial-1.webm" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+    </div>
+</section> -->
+
+
+<!-- Video Testimonials Start -->
+<section class="video-testimonials">
+    <div class="container">
+
+        <div class="testimonial-heading">
+            <h2>What People are Saying</h2>
+            <p>
+                Read the candid confessions of many
+                a happy customer
+            </p>
+        </div>
+
+        <div class="testimonial-videos">
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/testimonial-1.webm" type="video/webm">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/testimonial-1.webm" type="video/webm">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/testimonial-1.webm" type="video/webm">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/videos/testimonial-1.webm" type="video/webm">
+                </video>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Video Testimonials End -->
+<!-- video testimonial end  -->
+
+    <!-- SECTION 07: FINAL CTA + CONTACT -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-cta-block">
+            <span class="contact-sub">Join Us for a Feast</span>
+            <h2 class="contact-title">Ready For Your Next Feast?</h2>
+            <p class="contact-desc">Experience premium South Indian hospitality. Book your table in advance or order our curated meals online to enjoy at home.</p>
+            
+            <div class="contact-cta-buttons">
+              <a href="tel:+919876543210" class="btn btn-gold btn-lg">Call Now</a>
+              <a href="#menu" class="btn btn-white btn-lg">Order Online</a>
+            </div>
 
                         <!-- Col 2: Legal & Corporate Links -->
                         <div class="footer-menu-col">
@@ -1356,5 +1885,78 @@
             </div>
         </div>
 
-    </body>
+        <!-- Right: Multi-column links -->
+        <div class="footer-menus">
+          <!-- Col 1: Exploration Navigation -->
+          <div class="footer-menu-col">
+            <h4 class="footer-menu-title">Explore</h4>
+            <ul class="footer-menu-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#story">Our Story</a></li>
+              <li><a href="#specialties">Specialties</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#catering-franchise">Catering & Franchise</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2: Legal & Corporate Links -->
+          <div class="footer-menu-col">
+            <h4 class="footer-menu-title">Legal</h4>
+            <ul class="footer-menu-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Mangamma Ruchulu. All rights reserved.</p>
+        <p>A Unit of Lakshya Foods</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Declarations (GSAP, GSAP ScrollTrigger, Lenis, and Main App Logic) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Back to Top Button with Circular Progress -->
+  <button class="back-to-top" id="js-back-to-top" aria-label="Back to top">
+    <svg class="progress-ring" width="50" height="50">
+      <circle class="progress-ring__circle" stroke="var(--color-gold)" stroke-width="2" fill="transparent" r="23" cx="25" cy="25"/>
+    </svg>
+    <div class="back-to-top-inner">
+      <svg class="back-to-top-icon" width="16" height="16" viewBox="0 0 20 20" fill="none">
+        <path d="M10 16V4M10 4L4 10M10 4L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </button>
+  <!-- PDF Menu Modal Overlay -->
+  <div class="pdf-modal-overlay" id="js-pdf-modal">
+    <div class="pdf-modal-container">
+      <div class="pdf-modal-header">
+        <h3 class="pdf-modal-title">Our Full Menu</h3>
+        <button type="button" class="pdf-modal-close" id="js-close-menu-pdf" aria-label="Close menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="pdf-modal-body">
+        <iframe class="pdf-modal-iframe" id="js-pdf-iframe" scrolling="yes" title="Mangamma Ruchulu Full Menu"></iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
