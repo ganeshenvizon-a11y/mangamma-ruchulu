@@ -46,6 +46,25 @@ document.addEventListener("DOMContentLoaded", () => {
         cursor.classList.remove("hovering");
       });
     });
+
+    // Custom cursor text and click event for Instagram on video hover
+    const videoWrap = document.getElementById("videoWrap");
+    if (videoWrap) {
+      videoWrap.addEventListener("mouseenter", () => {
+        cursor.classList.add("video-hovering");
+        cursor.innerHTML = `<span class="cursor-instagram-badge">Connect us on Instagram to view more</span>`;
+      });
+      videoWrap.addEventListener("mouseleave", () => {
+        cursor.classList.remove("video-hovering");
+        cursor.innerHTML = "";
+      });
+
+      // Navigate to Instagram on clicking the video container
+      videoWrap.addEventListener("click", (e) => {
+        if (e.target.closest("#videoToggle")) return;
+        window.open("https://instagram.com/managamma_ruchulu", "_blank");
+      });
+    }
   }
 
   /* ==========================================================================
@@ -690,6 +709,9 @@ document.addEventListener("DOMContentLoaded", () => {
       /* Gradually decrease video transparency (opacity 0.4 -> 1.0) on scroll */
       tl.to(videoEl, { opacity: 1.0, ease: "none", duration: 1 }, 0);
 
+      /* Gradually fade in the video wrap container from opacity 0 to 1 on scroll */
+      tl.fromTo(videoWrapEl, { opacity: 0 }, { opacity: 1, ease: "power2.out", duration: 0.55 }, 0);
+
       tl.to(videoWrapEl, {
         width: function () { return getStageOneTarget().width + "px"; },
         height: function () { return getStageOneTarget().height + "px"; },
@@ -1042,6 +1064,71 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ==========================================================================
+     GSAP TEXT REVEAL & FLOAT HOVER FOR SECTION MANAGAMMA_RUCHULU
+     ========================================================================== */
+  if (hasGSAP && hasScrollTrigger) {
+    const brandChars = document.querySelectorAll("#js-reveal-brand .char-span");
+    if (brandChars.length > 0) {
+      // Create a unified timeline for coordinated brand section reveal (working up and down)
+      const brandTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#managamma_ruchulu",
+          start: "top 75%",
+          toggleActions: "play reverse play reverse"
+        }
+      });
+
+      // 1. Animate text slide-up, rotation, and opacity
+      brandTl.from(brandChars, {
+        y: 120,
+        opacity: 0,
+        color: "var(--color-gold)",
+        rotation: 10,
+        duration: 1.2,
+        ease: "power4.out",
+        stagger: 0.04
+      });
+      
+      // 2. Animate color change to Guntur maroon (overlapping with text reveal)
+      brandTl.to(brandChars, {
+        color: "var(--color-maroon)",
+        duration: 1.0,
+        ease: "power2.out",
+        stagger: 0.04
+      }, "-=0.9");
+
+      // 3. Scale and rotate in the 3 floating icons (Vector, Vector 1, Vector 2)
+      brandTl.from("#managamma_ruchulu .floating-icon", {
+        scale: 0,
+        opacity: 0,
+        rotation: -60,
+        duration: 1.5,
+        ease: "back.out(1.7)",
+        stagger: 0.15
+      }, "-=1.6");
+    }
+
+    // Parallax mouse move effect on floating icons in the section
+    const revealSection = document.getElementById("managamma_ruchulu");
+    if (revealSection) {
+      revealSection.addEventListener("mousemove", (e) => {
+        const rect = revealSection.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        
+        gsap.to("#float-icon-1", { x: x * 0.06, y: y * 0.06, rotation: x * 0.03, duration: 0.6, ease: "power2.out" });
+        gsap.to("#float-icon-2", { x: x * -0.05, y: y * -0.05, rotation: y * -0.04, duration: 0.6, ease: "power2.out" });
+        gsap.to("#float-icon-3", { x: x * 0.04, y: y * -0.04, rotation: x * -0.03, duration: 0.6, ease: "power2.out" });
+      });
+      
+      // Reset position when mouse leaves
+      revealSection.addEventListener("mouseleave", () => {
+        gsap.to("#managamma_ruchulu .floating-icon", { x: 0, y: 0, rotation: 0, duration: 1.0, ease: "power3.out" });
+      });
+    }
+  }
+
+  /* ==========================================================================
      13. PDF MENU MODAL CONTROLLER
      ========================================================================== */
   const pdfModal = document.getElementById("js-pdf-modal");
@@ -1103,11 +1190,11 @@ document.addEventListener("DOMContentLoaded", () => {
   faqItems.forEach((item) => {
     const trigger = item.querySelector(".faq-trigger");
     const content = item.querySelector(".faq-content");
-
+ 
     if (trigger && content) {
       trigger.addEventListener("click", () => {
         const isActive = item.classList.contains("active");
-
+ 
         // Close other items for a clean accordion experience
         faqItems.forEach((otherItem) => {
           if (otherItem !== item && otherItem.classList.contains("active")) {
@@ -1118,7 +1205,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (otherContent) otherContent.style.maxHeight = null;
           }
         });
-
+ 
         // Toggle current item
         if (isActive) {
           item.classList.remove("active");
@@ -1133,4 +1220,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
