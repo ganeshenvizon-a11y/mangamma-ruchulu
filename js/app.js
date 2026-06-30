@@ -1190,11 +1190,11 @@ document.addEventListener("DOMContentLoaded", () => {
   faqItems.forEach((item) => {
     const trigger = item.querySelector(".faq-trigger");
     const content = item.querySelector(".faq-content");
-
+ 
     if (trigger && content) {
       trigger.addEventListener("click", () => {
         const isActive = item.classList.contains("active");
-
+ 
         // Close other items for a clean accordion experience
         faqItems.forEach((otherItem) => {
           if (otherItem !== item && otherItem.classList.contains("active")) {
@@ -1205,7 +1205,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (otherContent) otherContent.style.maxHeight = null;
           }
         });
-
+ 
         // Toggle current item
         if (isActive) {
           item.classList.remove("active");
@@ -1220,4 +1220,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
